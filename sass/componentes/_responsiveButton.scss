@@ -1,0 +1,45 @@
+#btn-menu {
+    display: none;
+}
+header div label {
+    display: none;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+}
+header div label:hover{
+    cursor: pointer;
+}
+header div label img {
+    width: 100%;
+}
+.menu ul{
+    margin: 0;
+    display: flex;
+}
+
+@media only screen and (max-width: 768px){
+    header div label {
+        display: block;
+    }
+    .menu {
+        position: absolute;
+        margin-left: -350px;
+        z-index: 1;
+    }
+    .menu ul {
+        background-color: #fdf6f0;
+        padding: 10px 30px;
+        width: 300px;
+    }
+    .menu ul li {
+        padding: 20px 0;
+    }
+    .menu ul li a {
+        font-size: 30px;
+    }
+    #btn-menu:checked ~ .menu {
+        margin-left: -15px;
+        transition: .5s;
+    }
+}

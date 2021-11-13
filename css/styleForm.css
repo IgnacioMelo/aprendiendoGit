@@ -1,0 +1,102 @@
+/*    FORMULARIOS*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: white;
+
+}
+
+/*    POPOVER */
+
+.link{
+    position: relative;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    cursor: pointer;
+
+}
+
+form{
+    position: absolute;
+    bottom: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: .5rem;
+    padding: 1rem;
+    width: 350px;
+    opacity: 0;
+    visibility: hidden;
+    background-color: rgb(252, 216, 212);
+    transition: opacity .5s, visibility .5s, bottom .5s;
+    
+}
+form .form{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.form input{
+    width: 100%;
+    padding: .5rem 1rem;
+    border: 2px solid body rgb(252, 216, 212);
+    font-size: 1rem ;
+    outline: none;
+}
+.form input:required:valid{
+    border-color: rgb(252, 216, 212);
+}
+
+
+
+form button{
+    display: block;
+    width: 100%;
+    padding: .5rem 0;
+    background-color:rgb(252, 216, 212) ;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background .5s;
+
+}
+
+form button:hover {
+    background: var(rgb(252, 216, 212));
+}
+form::before{
+    content: '';
+    position: absolute;
+    border: 1rem solid;
+    border-color:rgb(252, 216, 212) transparent transparent;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.link:hover form{
+    opacity: 1;
+    visibility: visible;
+    bottom: 3.5rem;
+}
+
+
+p{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: .5rem 1rem;
+    border: 2px solid body rgb(252, 216, 212);
+    font-size: 15px ;
+    outline: none;
+}
+
+.contenedorLogRecuperarContactar{
+    display: flex;
+}

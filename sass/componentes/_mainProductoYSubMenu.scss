@@ -1,0 +1,85 @@
+body{
+    .mainGeneral{
+        width: 100%;
+        background-color: $color-terciario;
+        h2{
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+    }
+    .mainGeneral__contenedorConjunto{
+        width: 80%;
+        margin: 0 auto;
+        padding-top:25px ;
+        padding-bottom: 25px ;
+        display: grid;
+        grid-template-areas: 
+        " conjunto1 conjunto2 conjunto3"
+        " conjunto4 conjunto5 conjunto6"
+        " conjunto7 conjunto8 conjunto9";
+        grid-template-rows: repeat(3, 1fr) ;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 20px;
+        grid-column-gap: 20px;
+        align-items: center;
+        justify-items: center;
+        
+    }
+    
+    .Uno{
+        grid-area: conjunto1;
+    }
+    .Dos{
+        grid-area: conjunto2;
+    }
+    .Tres{
+        grid-area: conjunto3;
+    }
+    .Cuatro{
+        grid-area: conjunto4;
+    }
+    .Cinco{
+        grid-area: conjunto5;
+    }
+    .Seis{
+        grid-area: conjunto6;
+    }
+    .Siete{
+        grid-area: conjunto7;
+    }
+    .Ocho{
+        grid-area: conjunto8;
+    }
+    .Nueve{
+        grid-area: conjunto9;
+    }
+    
+    
+    .mainGeneral__contenedorConjunto__button{
+        background-color: black;
+        border: solid 1px black;
+        color: white;
+        padding: 10px 20px;
+        margin-bottom: 15px;
+    }
+    
+    .mainGeneral__contenedorConjunto__conjunto{
+        display: flex;
+        flex-flow: row wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid wheat;
+    }
+    .mainGeneral__contenedorConjunto__conjunto img{
+        width: 250px ;
+        height: 250px;
+    }
+    
+}
+
+
+
+

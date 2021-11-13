@@ -1,0 +1,150 @@
+@media (max-width: 480px){
+    body{
+        .encabezadoGeneral{
+            width: 100%;
+            &__sectionUno{
+                font-size: 10px;
+                width: 100%;
+                padding:0;
+                margin-bottom: 0;
+                p{
+                    font-size: 13px;
+                }
+            }
+            &__sectionDos{
+                padding: 7px;
+                display:flex;
+                flex-flow: row wrap;
+                justify-content: flex-start;
+                margin-right: 0;
+                font-size: 11px;
+                .buttonHeader a{
+                    font-size: 16px;
+                }
+            }
+            &__sectionTres{
+                width: 100%;
+                padding: 1% 0;
+                &__tituloPrincipal{
+                    font-size: 15px;
+                }
+            }
+            &__contenedorListaMenu{
+                padding:7px;
+                &__listaMenu{
+                    font-size: 15px;
+                }
+            }
+        }
+        .mainGeneral{
+            &__mainInicio{
+                h2{
+                    text-align: center;
+                    font-size: 15px;
+                }
+                &__fotoInicio1{
+                    img{
+                        width: 120px;
+                        height: 120px;
+                    }
+                }
+            }
+            .fotoCarrousel{
+                padding-left: 16px;
+                width: 380px;
+                height: 300px;
+            }
+            .contenedorCarrouselSoloInicio{
+                display: block;
+            
+            }
+            &__contenedorConjunto{
+                display: grid;
+                grid-template-areas:
+                "conjunto1 conjunto2"
+                "conjunto3 conjunto4"
+                "conjunto5 conjunto6"
+                "conjunto7 conjunto8"
+                "conjunto9 .";
+                grid-template-rows: repeat(5, 1fr) ;
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+        }
+        .footerGeneral{
+            width: 100%;
+            display: block;
+            justify-content: space-between;
+            list-style: none;
+            font-size: 10px;
+            padding-left: 10px;
+            &__veniAConocernos{
+                display: flex;
+                flex-wrap: wrap;
+                padding-left: 5px ;
+                font-size: 12px;
+                padding-top: 5px;
+                p{
+                    padding-right: 6px;
+                }
+                &__googleMaps{
+                    
+                    width: 100px;
+                    height: 50px;
+                }
+            }
+            &__mediosComunicacion{
+                padding-left: 5px;
+                font-size: 12px;
+                &__listaFooter{
+                    font-size: 12px;
+                    list-style: none;
+                    padding-bottom: 5px;
+                }
+            }
+            &__mediosDePago{
+                padding-left: 5px;
+                font-size: 12px;
+                &__listaFooter{
+                    img{
+                        border-radius: 7px;
+                        width: 35px;
+                        height: 35px;
+                    }
+                }
+            }
+        }
+        .h2Producto{
+            text-align: center;
+            font-size: 10px;
+        }
+        .mainGeneral{
+            &__contenedorConjunto{
+                width: 80%;
+                margin: 0 auto;
+                padding-top:11px ;
+                padding-bottom: 11px ;
+                &__conjunto{
+                    img{
+                        width: 150px;
+                        height: 100px;        
+                    }
+                    h2{
+                        font-size: 12px;
+                    }
+                    h3{
+                        font-size: 12px;
+                    }
+                }
+                &__button{
+                    background-color: black;
+                    border: solid 1px black;
+                    color: white;
+                    padding: 5px 10px;
+                    margin-bottom: 0;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}

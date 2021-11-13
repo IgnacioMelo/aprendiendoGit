@@ -1,0 +1,613 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+}
+ol, ul {
+    padding-left: 0;
+}
+
+/*************************
+* GRID POR AREAS 
+**************************/
+.paginaWeb{
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 
+    " encabezadoGeneral "
+    " mainGeneral"
+    " footerGeneral";
+    grid-template-rows:  1fr ;
+    grid-template-columns: repeat(3,1fr) ;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    align-items: left;
+    justify-items: left;
+}
+.border {
+    border: solid 1px rgb(164, 164, 164);
+}
+
+/* Nombrar cada area */
+.Uno{
+    grid-area: encabezadoGeneral;
+}
+.Dos{
+    grid-area: mainGeneral;
+}
+.Tres{
+    grid-area: footerGeneral;
+}
+
+/*-----HEADER GENERAL-------*/
+.encabezadoGeneral__sectionUno{ 
+    text-align: center;
+    background-color: rgb(245, 239, 244);
+    padding: 15px 0;
+    margin: 0 auto;
+}
+.encabezadoGeneral__sectionUno p{
+    margin: 0 auto;
+}
+
+.encabezadoGeneral__sectionDos{
+    background-color: rgb(231, 209, 214);
+    padding: 15px;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;/*justifica el contenido*/
+    margin-right: 0;
+}
+
+.encabezadoGeneral__sectionTres{
+    background-color: rgb(245, 239, 244);
+    padding: 1% 0;
+}
+
+h1{
+    text-align: left;
+    font-size: 25px;
+    margin: 0 auto;
+}
+
+.encabezadoGeneral__sectionTres__tituloPrincipal{
+    color:rgb(190, 38, 140);
+    text-decoration: none;
+    padding-left: 15px;
+    
+}
+
+
+nav{
+    background-color: rosybrown;
+    padding:15px;
+}
+
+.encabezadoGeneral__contenedorListaMenu{
+    padding:35px;
+    background-color: rosybrown ;
+    
+}
+
+.encabezadoGeneral__contenedorListaMenu__listaMenu{
+    
+    display:flex ;
+    flex-wrap: wrap ;
+    justify-content: space-between ;
+    width: 60%;
+    margin:auto ;
+    list-style: none ;
+    font-size: 25px ;
+}
+
+.encabezadoGeneral__contenedorListaMenu__listaMenu a{
+    text-decoration: none;
+    color:black;
+}
+
+.subMenu {
+    display: none;
+    position: absolute;
+    list-style: none;
+    width: 100px;
+    height: 100px;
+    background: rosybrown;
+}
+.productos{
+    position: relative;
+}
+.productos:hover .subMenu{
+    display:table;
+}
+.buttonHeader{
+    background-color:rgb(245, 239, 244);
+    color: black;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+
+}
+
+/*------------------------------*/
+/*------MAIN INICIO----------*/
+.mainGeneral__mainInicio{
+    /*background-color: rgb(238, 121, 141);*/
+    width: 100%;
+    background-image: linear-gradient(to top, rgb(238, 121, 141), rosybrown)
+    
+}
+
+.mainGeneral__mainInicio h2{
+    text-align: center;
+
+}
+.mainGeneral__mainInicio__fotoInicio1{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+
+    
+}
+.mainGeneral__mainInicio__fotoInicio1 img{
+    width: 500px;
+    height: 500px;
+}
+
+
+
+/**----MAINN CONJUNTO---*/
+
+/*conjuntos*/
+/*mainConjuntos*/
+.mainGeneral__contenedorConjunto{
+    width: 80%;
+    margin: 0 auto;
+    padding-top:25px ;
+    padding-bottom: 25px ;
+    display: grid;
+    grid-template-areas: 
+    " conjunto1 conjunto2 conjunto3"
+    " conjunto4 conjunto5 conjunto6"
+    " conjunto7 conjunto8 conjunto9";
+    grid-template-rows: repeat(3, 1fr) ;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    align-items: center;
+    justify-items: center;
+    
+}
+
+.mainGeneral__contenedorConjunto img{
+    width: 300px;
+
+}
+
+.Uno{
+    grid-area: conjunto1;
+}
+.Dos{
+    grid-area: conjunto2;
+}
+.Tres{
+    grid-area: conjunto3;
+}
+.Cuatro{
+    grid-area: conjunto4;
+}
+.Cinco{
+    grid-area: conjunto5;
+}
+.Seis{
+    grid-area: conjunto6;
+}
+.Siete{
+    grid-area: conjunto7;
+}
+.Ocho{
+    grid-area: conjunto8;
+}
+.Nueve{
+    grid-area: conjunto9;
+}
+
+.mainConjunto{
+    display: flex;
+}
+div.logoTipo img{
+    width: 50px;
+    height: 50px;
+}
+.logoTipo{
+    display: flex;
+}
+
+.logoTipo h4{
+    color:black;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+
+.mainGeneral__contenedorConjunto__button{
+    background-color: black;
+    border: solid 1px black;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+}
+
+.mainGeneral__contenedorConjunto__conjunto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid wheat;
+}
+.mainGeneral__contenedorConjunto__conjunto img{
+    width: 250px;
+    height: 250px;
+}
+
+/*--------------------------------*/
+/*---MAIN PRODUCTO*/
+.mainGeneral__tituloProductoConjuntoPijamaAroma{
+    text-align: center;
+    font-size: 27px;
+}
+/*--------MAIN POLITICAS DE CAMBIO*/
+
+.mainGeneral__partePrincipalParrafoPoliticas{
+    width: 100%;
+}
+
+
+
+/*-----------------------*/
+/*--------MAIN ENVIOS*/
+
+.mainGeneral__partePrincipalParrafoEnvios{
+    width: 100%;
+}
+
+
+
+/*-----------------------*/
+
+/*ACA ARRANCA EL FOOTER GENERAL */
+
+.footerGeneral{
+    width: 100%;
+    background-color: rosybrown;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+.footerGeneral__veniAConocernos__googleMaps{
+    width: 200px;
+    height: 110px;
+}
+.footerGeneral__mediosComunicacion{
+    padding-right: 15px;
+}
+.footerGeneral__veniAConocernos{
+    padding-left: 15px;
+}
+
+.footerGeneral__mediosComunicacion__listaFooter{
+    list-style: none;
+    font-size: 20px;
+}
+
+
+
+
+/*----------------------------------------------*/
+@media (min-width: 769px) and (max-width: 1024px) {
+    .encabezadoGeneral{
+        width: 100%;
+    }
+    /*ACA ARRANCA EL HEADERRR*/
+    .encabezadoGeneral__sectionUno{ 
+        font-size: 22px;
+        width: 100%;
+        padding:0;
+    }
+    .encabezadoGeneral__sectionDos{
+        background-color: rgb(231, 209, 214);
+        padding: 15px;
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;/*justifica el contenido*/
+        margin-right: 0;
+    }
+    div.encabezadoGeneral__sectionTres{
+        width: 100%;
+        padding:0;
+    }
+    .encabezadoGeneral__sectionTres__tituloPrincipal{
+        font-size: 25px;
+    }
+    
+    .encabezadoGeneral__contenedorListaMenu{
+    padding:25px;
+    }
+    
+    .encabezadoGeneral__contenedorListaMenu__listaMenu{
+    
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        margin:auto;
+        list-style: none;
+        font-size: 23px;
+    }
+    /*--------------------*/
+    /*------MAIN INICIO---------*/
+    .mainGeneral__mainInicio__fotoInicio1 img{
+        width: 400px;
+        height: 400px;
+    }
+    /*--------------------*/
+    /*----MAINCONJUNTO*/
+    .mainGeneral__contenedorConjunto__conjunto img{
+        width: 200px;
+        height: 150px;
+        
+    }
+    .mainGeneral__contenedorConjunto__conjunto h2{
+        font-size: 20px;
+    }
+    .mainGeneral__contenedorConjunto__conjunto h3{
+        font-size: 20px;
+    }
+    /*--------------------------------------------*/
+    /*-------------FOOTERGENERAL-------------------------*/
+    .footerGeneral{
+        width: 100%;
+        background-color: rosybrown;
+        display:flex;
+        justify-content: space-between;
+        list-style: none;
+        background-image: radial-gradient(circle, rgb(245, 239, 244), rosybrown);
+    }
+    .footerGeneral__veniAConocernos__googleMaps{
+        width: 200px;
+        height: 110px;
+    }
+    .footerGeneral__veniAConocernos{
+        padding-left: 15px;
+        font-size: 20px;
+    }
+    .footerGeneral__mediosComunicacion{
+        padding-right:15px ;
+        font-size: 20px;
+    }
+    .footerGeneral__mediosDePago{
+        font-size: 20px;
+    }
+    /*-----------------------------*/
+}
+
+@media only screen and (max-width:768px){
+    .encabezadoGeneral{
+        width: 100%;
+    }
+    /*ACA ARRANCA EL HEADERRR*/
+    .encabezadoGeneral__sectionUno{ 
+        font-size: 15px;
+        width: 100%;
+        padding:0;
+    }
+    .encabezadoGeneral__sectionDos{
+        background-color: rgb(231, 209, 214);
+        padding: 10px;
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;/*justifica el contenido*/
+        margin-right: 0;
+    }
+    div.encabezadoGeneral__sectionTres{
+        width: 100%;
+        padding:0;
+    }
+    .encabezadoGeneral__sectionTres__tituloPrincipal{
+        font-size: 18px;
+    }
+    .encabezadoGeneral__contenedorListaMenu{
+        padding:15px;
+        
+    }
+    .encabezadoGeneral__contenedorListaMenu__listaMenu{
+    
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        margin:auto;
+        list-style: none;
+        font-size: 17px;
+    }
+    /*------MAIN INICIO---------*/
+    .mainGeneral_mainInicio_fotoInicio1 img{
+        width: 300px;
+        height: 300px;
+    }
+    /*--------------------*/
+    /*-----MAIN PRODUCTO---*/
+    .h2Producto{
+        text-align: center;
+        font-size: 17px;
+    }
+    /*--------------------*/
+    /*----MAINCONJUNTO*/
+    .mainGeneral__contenedorConjunto__conjunto img{
+        width: 100px;
+        height: 90px;
+        
+    }
+    .mainGeneral__contenedorConjunto__conjunto h2{
+        font-size: 16px;
+    }
+    .mainGeneral__contenedorConjunto__conjunto h3{
+        font-size: 16px;
+    }
+    .mainGeneral__contenedorConjunto{
+        width: 80%;
+        margin: 0 auto;
+        padding-top:17px ;
+        padding-bottom: 17px ;
+    }
+    /*--------------------------------------------*/
+    /*-------------FOOTERGENERAL-------------------------*/
+    .footerGeneral{
+        width: 100%;
+        background-color: rosybrown;
+        display:flex;
+        justify-content: space-between;
+        list-style: none;
+        background-image: radial-gradient(circle, rgb(245, 239, 244), rosybrown);
+    }
+    .footerGeneral__veniAConocernos__googleMaps{
+        width: 150px;
+        height: 90px;
+    }
+    .footerGeneral__veniAConocernos{
+        padding-left: 9px;
+    }
+    .footerGeneral__mediosComunicacion{
+        padding-right: 9px;
+    }
+    .footerGeneral__mediosComunicacion__listaFooter{
+        list-style: none;
+        font-size: 13px;
+    }
+
+    /*-----------------------------*/
+}
+
+@media (max-width: 480px){
+    .encabezadoGeneral{
+        width: 100%;
+    }
+    /*ACA ARRANCA EL HEADERRR*/
+    .encabezadoGeneral__sectionUno{ 
+        font-size: 10px;
+        width: 100%;
+        padding:0;
+    }
+    .encabezadoGeneral__sectionDos{
+        background-color: rgb(231, 209, 214);
+        padding: 7px;
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;/*justifica el contenido*/
+        margin-right: 0;
+        font-size: 11px;
+    }
+    div.encabezadoGeneral__sectionTres{
+        width: 100%;
+        padding:0;
+    }
+    .encabezadoGeneral__sectionTres__tituloPrincipal{
+        font-size: 10px;
+    }
+    .encabezadoGeneral__contenedorListaMenu{
+        padding:7px;
+        
+    }
+    .encabezadoGeneral__contenedorListaMenu__listaMenu{
+    
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        margin:auto;
+        list-style: none;
+        font-size: 12px;
+    }
+    .encabezadoGeneral__contenedorListaMenu{
+        padding:10px
+        
+    }
+    /*------MAIN INICIO---------*/
+    .mainGeneral__mainInicio h2{
+        text-align: center;
+        font-size: 15px;
+    }
+    .mainGeneral__mainInicio__fotoInicio1 img{
+        width: 200px;
+        height: 150px;
+    }
+    /*--------------------*/
+    /*-----MAIN PRODUCTO---*/
+    .h2Producto{
+        text-align: center;
+        font-size: 10px;
+    }
+    /*--------------------*/
+    /*----MAINCONJUNTO*/
+    .mainGeneral__contenedorConjunto__conjunto img{
+        width: 100px;
+        height: 70px;        
+    }
+    .mainGeneral__contenedorConjunto__conjunto h2{
+        font-size: 12px;
+    }
+    .mainGeneral__contenedorConjunto__conjunto h3{
+        font-size: 12px;
+    }
+    .mainGeneral__contenedorConjunto__button{
+        background-color: black;
+        border: solid 1px black;
+        color: white;
+        padding: 5px 10px;
+        margin-bottom: 0;
+        font-size: 10px;
+    }
+    .mainGeneral__contenedorConjunto{
+        width: 80%;
+        margin: 0 auto;
+        padding-top:11px ;
+        padding-bottom: 11px ;
+    }
+    /*--------------------------------------------*/
+    /*-------------FOOTERGENERAL-------------------------*/
+    .footerGeneral{
+        width: 100%;
+        background-color: rosybrown;
+        display:flex;
+        justify-content: space-between;
+        list-style: none;
+        background-image: radial-gradient(circle, rgb(245, 239, 244), rosybrown);
+    }
+    .pieDePagina{
+        font-size: 10px;
+    }
+    .footerGeneral__veniAConocernos__googleMaps{
+        width: 100px;
+        height: 50px;
+    }
+    .footerGeneral__veniAConocernos{
+        margin: 0 7px;
+        font-size: 12px;
+    }
+    .footerGeneral__mediosComunicacion{
+        margin: 0 7px ;
+        font-size: 12px;
+    }
+    .footerGeneral__mediosDePago{
+        font-size: 12px;
+    }
+    .footerGeneral__mediosComunicacion__listaFooter{
+        list-style: none;
+        font-size: 12px;
+    }
+    /*-----------------------------*/
+}
+
