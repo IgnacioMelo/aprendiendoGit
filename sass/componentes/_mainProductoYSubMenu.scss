@@ -63,19 +63,30 @@ body{
         color: white;
         padding: 10px 20px;
         margin-bottom: 15px;
+        border-radius: 12px;
     }
     
     .mainGeneral__contenedorConjunto__conjunto{
+        width: 100%;
         display: flex;
         flex-flow: row wrap;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        text-align: center;
         border: 1px solid wheat;
+        border-radius: 12px;
+        h2{
+            font-size: 21px;
+            
+        }
+
     }
     .mainGeneral__contenedorConjunto__conjunto img{
         width: 250px ;
         height: 250px;
+        border-radius: 12px;
+        padding-top: 5px;
     }
     
 }

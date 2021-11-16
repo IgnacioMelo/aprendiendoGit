@@ -3,8 +3,10 @@
 
 /*---- ACA ARRANCA BODY---*/
 body{
+    width: 100%;
     margin: 0;
     padding: 0;
+    background-color: $color-terciario;
     ol, ul{
         padding-left: 0;
     }
@@ -36,10 +38,17 @@ body{
                 border: $color-terciario;
                 padding: 10px 20px;
                 margin-bottom: 15px;
+                border-radius: 12px;
                 a{
                     font-size: 20px;
                     text-decoration: none;
                     color: $color-p;
+                }
+            }
+            .buttonHeader:hover{
+                background-color:$color-p ;
+                a{
+                    color:$color-secundario;
                 }
             }
         }
@@ -86,6 +95,11 @@ body{
                 a{
                     text-decoration: none;
                     color: $color-p;
+                    border-radius: 12px;
+                }
+                a:hover{
+                    background-color: $color-p;
+                    color: white;
                 }
                 li{
                     display: block;
@@ -102,9 +116,10 @@ body{
                 display: none;
                 position: absolute;
                 list-style: none;
-                width: 100px;
+                width: 120px;
                 height: 100px;
                 background: $color-secundario;
+                border-radius: 12px
             }
         }
     }
@@ -124,10 +139,18 @@ body{
             width: 100%;
             height: 800px;
             background-color: $color-terciario;
+            text-align: center;
+            ol{
+                list-style: none;
+            }
         }
         &__partePrincipalParrafoEnvios{
             width: 100%;
-            background-color: $color-terciario
+            background-color: $color-terciario;
+            text-align: center;
+            ul{
+                list-style: none;
+            }
         }
     }
 }
