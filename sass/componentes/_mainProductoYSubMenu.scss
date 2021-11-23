@@ -58,12 +58,21 @@ body{
     
     
     .mainGeneral__contenedorConjunto__button{
-        background-color: black;
-        border: solid 1px black;
-        color: white;
         padding: 10px 20px;
         margin-bottom: 15px;
         border-radius: 12px;
+        background-color: $color-secundario;
+        border: $color-terciario;
+        .linkWpCompra{
+            text-decoration: none;
+            color: black;
+        }
+    }
+    .mainGeneral__contenedorConjunto__button:hover{
+        background-color:$color-p ;
+        a{
+            color:$color-secundario;
+        }
     }
     
     .mainGeneral__contenedorConjunto__conjunto{
@@ -78,6 +87,8 @@ body{
         border-radius: 12px;
         h2{
             font-size: 21px;
+            color: $color-p;
+            
             
         }
 
