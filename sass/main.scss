@@ -58,7 +58,7 @@ body{
             background-color: $color-principal;
             padding:15px;
             .imagenLogoTipo{
-                @include imgLogo (60px,60px);
+                @include imgLogo (60px,auto);
             }
             &__tituloPrincipal{
                 color:$color-h1;
@@ -96,10 +96,12 @@ body{
                     text-decoration: none;
                     color: $color-p;
                     border-radius: 12px;
+                    padding: 5px 20px;
                 }
                 a:hover{
                     background-color: $color-p;
                     color:$color-secundario;
+                    padding: 5px 20px;
                 }
                 li{
                     display: block;

@@ -68,58 +68,6 @@
                 "conjunto9 .";
                 grid-template-rows: repeat(5, 1fr) ;
                 grid-template-columns: repeat(2, 1fr);
-            }
-            
-        }
-        .footerGeneral{
-            width: 100%;
-            display: block;
-            justify-content: space-between;
-            list-style: none;
-            font-size: 10px;
-            padding-left: 10px;
-            &__veniAConocernos{
-                display: flex;
-                flex-wrap: wrap;
-                padding-left: 5px ;
-                font-size: 12px;
-                padding-top: 5px;
-                p{
-                    padding-right: 6px;
-                }
-                &__googleMaps{
-                    
-                    width: 100px;
-                    height: 50px;
-                }
-            }
-            &__mediosComunicacion{
-                padding-left: 5px;
-                font-size: 12px;
-                &__listaFooter{
-                    font-size: 12px;
-                    list-style: none;
-                    padding-bottom: 5px;
-                }
-            }
-            &__mediosDePago{
-                padding-left: 5px;
-                font-size: 12px;
-                &__listaFooter{
-                    img{
-                        border-radius: 7px;
-                        width: 35px;
-                        height: 35px;
-                    }
-                }
-            }
-        }
-        .h2Producto{
-            text-align: center;
-            font-size: 10px;
-        }
-        .mainGeneral{
-            &__contenedorConjunto{
                 width: 80%;
                 margin: 0 auto;
                 padding-top:11px ;
@@ -145,6 +93,39 @@
                     font-size: 10px;
                 }
             }
+            .h2Producto{
+                text-align: center;
+                font-size: 10px;
+            }
         }
+        .footerGeneral{
+            width: 100%;
+            height: 270px;
+            display: block;
+            justify-content: space-between;
+            list-style: none;
+            font-size: 10px;
+            padding-left: 10px;
+            &__veniAConocernos{
+                padding-left: 5px ;
+                font-size: 12px;
+                padding-top: 5px;
+                &__googleMaps{
+                    width: 150px;
+                    height: 120px;
+                }
+            }
+            .footerDerechosAutor{
+                margin-bottom: 0 !important;
+            }
+            .bloqueFormularioFooter{
+                display: block !important;
+                
+            }
+            .botonSubscribirseFooter{
+                margin-top: 5px;
+            }
+        }
+        
     }
 }

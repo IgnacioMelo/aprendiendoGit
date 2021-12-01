@@ -50,36 +50,10 @@
                 width: 500px;
                 height: 400px;
             }
-        }
-        
-        .footerGeneral{
-            width: 100%;
-            display:flex;
-            justify-content: space-between;
-            list-style: none;
-            font-size: 20px;
-            &__veniAConocernos{
-                padding-left: 15px;
-                font-size: 20px;
-                &__googleMaps{
-                    width: 200px;
-                    height: 110px;
-                }
+            .h2Producto{
+                text-align: center;
+                font-size: 27px;
             }
-            &__mediosComunicacion{
-                padding-right:15px ;
-                font-size: 20px;
-            }
-            &__mediosDePago{
-                padding-right: 15px;
-                font-size: 20px;
-            }
-        }
-        .h2Producto{
-            text-align: center;
-            font-size: 27px;
-        }
-        .mainGeneral{
             &__contenedorConjunto{
                 &__conjunto{
                     img{
@@ -92,6 +66,21 @@
                     h3{
                         font-size: 20px;
                     }
+                }
+            }
+        }
+        .footerGeneral{
+            width: 100%;
+            display:flex;
+            justify-content: space-between;
+            list-style: none;
+            font-size: 20px;
+            &__veniAConocernos{
+                padding-left: 15px;
+                font-size: 20px;
+                &__googleMaps{
+                    width: 200px;
+                    height: 170px;
                 }
             }
         }
