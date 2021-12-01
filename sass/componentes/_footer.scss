@@ -32,38 +32,5 @@
         color: $color-p;
         font-weight: 700;
     }
-    &__veniAConocernos{
-        padding-left: 15px;
-        &__googleMaps{
-            width: 200px;
-            height: 110px;
-        }
-    }
-    &__mediosDePago{
-        &__listaFooter{
-            list-style: none;
-            font-size: 20px; 
-            li{
-                padding: 5px 5px 5px 5px ;
-            }
-            img{
-                width: 55px;
-                height: 40px;
-            }
-            a{
-                color: black;
-                text-decoration: none;
-            }
-        }
-    }
-    &__mediosComunicacion{
-        padding-right: 15px;
-        &__listaFooter{
-            list-style: none;
-            font-size: 20px; 
-            a{
-                text-decoration: none;
-            }
-        }
-    }
+
 }
