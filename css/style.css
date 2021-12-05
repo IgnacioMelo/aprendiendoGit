@@ -104,18 +104,24 @@ body {
       background-color: #f8e2cf;
       text-align: center; }
       body .mainGeneral__mainInicio .h2 {
+        justify-content: center;
+        align-items: center;
         color: #bd4b4b;
         text-align: center; }
     body .mainGeneral .fotoCarrousel {
-      width: 700px;
-      height: 500px; }
+      justify-content: center;
+      align-items: center;
+      width: 1000px;
+      height: 700px; }
     body .mainGeneral .contenedorCarrouselSoloInicio {
-      display: flex;
+      width: 100%;
+      display: block;
       justify-content: center;
       align-items: center;
       padding-top: 25px;
       padding-right: 25px;
-      padding-bottom: 25px; }
+      padding-bottom: 25px;
+      margin: 0; }
   body .footerGeneral {
     width: 100%;
     background-color: #f5c6aa;

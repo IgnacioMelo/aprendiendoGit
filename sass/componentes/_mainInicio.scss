@@ -6,21 +6,27 @@
         background-color: $color-terciario;
         text-align: center;
         .h2{
+            justify-content: center;
+            align-items: center;
             color: $color-h1;
             text-align: center;
         }
     }
     .fotoCarrousel{
-        width: 700px;
-        height: 500px;
+        justify-content: center;
+        align-items: center;
+        width: 1000px;
+        height: 700px;
     }
     .contenedorCarrouselSoloInicio{
-        display: flex;
+        width: 100%;
+        display: block;
         justify-content: center;
         align-items: center;
         padding-top: 25px;
         padding-right: 25px;
         padding-bottom: 25px;
+        margin:0;
     
     }
     
