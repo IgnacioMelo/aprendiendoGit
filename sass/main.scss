@@ -1,5 +1,4 @@
 @import 'base/variables';
-@import 'base/extends';
 
 /*---- ACA ARRANCA BODY---*/
 body{
@@ -18,60 +17,23 @@ body{
     }
     .encabezadoGeneral{
         width: 100%;
-        &__sectionUno{
-            text-align: center;
-            background-color: $color-principal;
-            p{
-                color: $color-h1;
-                margin:0;
-                font-size:22px ;
-            }
-        }
-        &__sectionDos{
-            background-color: $color-secundario;
-            display:flex;
-            flex-flow: row wrap;
-            justify-content: flex-end;
-            margin-right: 0;
-            .buttonHeader{
-                background-color: $color-secundario;
-                border: $color-terciario;
-                padding: 10px 20px;
-                margin-bottom: 15px;
-                border-radius: 12px;
-                a{
-                    font-size: 20px;
-                    text-decoration: none;
-                    color: $color-p;
-                }
-            }
-            .buttonHeader:hover{
-                background-color:$color-p ;
-                a{
-                    color:$color-secundario;
-                }
-            }
-        }
         &__sectionTres{
             width: 100%;
             display: flex;
-            background-color: $color-principal;
+            justify-content: center;
+            background-color: #f5c6aa;
             padding:15px;
-            .imagenLogoTipo{
-                @include imgLogo (60px,auto);
-            }
             &__tituloPrincipal{
-                color:$color-h1;
+                color:$color-p;
                 text-decoration: none;
                 padding-left: 15px;
-                text-align: left;
-                font-size: 25px;
+                font-size: 35px;
                 margin: 0 auto;
             }
         }
         &__contenedorListaMenu{
             width: 100%;
-            background-color: $color-secundario;
+            background-color:#f5c6aa;
             padding:20px;
             #btn-menu{
                 display: none;
@@ -125,14 +87,9 @@ body{
             }
         }
     }
-    @import 'componentes/mainInicio';
-    @import 'componentes/footer';
-}
-/*------ MAIN PRODUCTOS-CONJUNTO-PIJAMA-AROMA-------*/
-@import 'componentes/mainProductoYSubMenu';
-/*--------------------------------*/
-body{
     .mainGeneral{
+        width: 100%;
+        padding-bottom:35px;
         &__tituloProductoConjuntoPijamaAroma{
             text-align: center;
             font-size: 27px;
@@ -155,12 +112,12 @@ body{
             }
         }
     }
+    @import 'componentes/mainInicio';
+    @import 'componentes/footer';
 }
-/*     FORMULARIOS     */
-
-
-
-/*------------------------------*/
+/*------ MAIN PRODUCTOS-CONJUNTO-PIJAMA-AROMA-------*/
+@import 'componentes/mainProductoYSubMenu';
+/*--------------------------------*/
 
 @import 'componentes/mediaQueryDesktop';
 @import 'componentes/mediaQueryTablet';

@@ -10,20 +10,6 @@
                     margin-top: 0;
                 }
             }
-            &__sectionDos{
-                padding: 10px;
-                display:flex;
-                flex-flow: row wrap;
-                justify-content: flex-end;
-                margin-right: 0;
-            }
-            &__sectionTres{
-                width: 100%;
-                padding:1% 0;
-                &__tituloPrincipal{
-                    font-size: 18px;
-                }
-            }
             &__contenedorListaMenu{
                 width: 100%;
                 padding:15px;
@@ -55,10 +41,6 @@
                     }
                 }
             }
-            .fotoCarrousel{
-                width: 400px;
-                height: 300px;
-            }
             .h2Producto{
                 text-align: center;
                 font-size: 17px;
@@ -89,13 +71,15 @@
             list-style: none;
             font-size: 15px;
             padding-left: 15px;
-            &__veniAConocernos{
-                padding-left: 9px;
-                font-size: 17px;
-                &__googleMaps{
-                    width: 150px;
-                    height: 90px;
-                }
+            .footerDerechosAutor{
+                margin-bottom: 0 !important;
+            }
+            .bloqueFormularioFooter{
+                display: block !important;
+                
+            }
+            .botonSubscribirseFooter{
+                margin-top: 5px;
             }
         }
     }

@@ -14,51 +14,21 @@ body {
     color: #bd4b4b; }
   body .encabezadoGeneral {
     width: 100%; }
-    body .encabezadoGeneral__sectionUno {
-      text-align: center;
-      background-color: #fcd8d4; }
-      body .encabezadoGeneral__sectionUno p {
-        color: #bd4b4b;
-        margin: 0;
-        font-size: 22px; }
-    body .encabezadoGeneral__sectionDos {
-      background-color: #fdf6f0;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: flex-end;
-      margin-right: 0; }
-      body .encabezadoGeneral__sectionDos .buttonHeader {
-        background-color: #fdf6f0;
-        border: #f8e2cf;
-        padding: 10px 20px;
-        margin-bottom: 15px;
-        border-radius: 12px; }
-        body .encabezadoGeneral__sectionDos .buttonHeader a {
-          font-size: 20px;
-          text-decoration: none;
-          color: #5e454b; }
-      body .encabezadoGeneral__sectionDos .buttonHeader:hover {
-        background-color: #5e454b; }
-        body .encabezadoGeneral__sectionDos .buttonHeader:hover a {
-          color: #fdf6f0; }
     body .encabezadoGeneral__sectionTres {
       width: 100%;
       display: flex;
-      background-color: #fcd8d4;
+      justify-content: center;
+      background-color: #f5c6aa;
       padding: 15px; }
-      body .encabezadoGeneral__sectionTres .imagenLogoTipo {
-        width: 60px;
-        height: auto; }
       body .encabezadoGeneral__sectionTres__tituloPrincipal {
-        color: #bd4b4b;
+        color: #5e454b;
         text-decoration: none;
         padding-left: 15px;
-        text-align: left;
-        font-size: 25px;
+        font-size: 35px;
         margin: 0 auto; }
     body .encabezadoGeneral__contenedorListaMenu {
       width: 100%;
-      background-color: #fdf6f0;
+      background-color: #f5c6aa;
       padding: 20px; }
       body .encabezadoGeneral__contenedorListaMenu #btn-menu {
         display: none; }
@@ -98,30 +68,38 @@ body {
         background: #fdf6f0;
         border-radius: 12px; }
   body .mainGeneral {
+    width: 100%;
+    padding-bottom: 35px; }
+    body .mainGeneral__tituloProductoConjuntoPijamaAroma {
+      text-align: center;
+      font-size: 27px; }
+    body .mainGeneral__partePrincipalParrafoPoliticas {
+      width: 100%;
+      height: 800px;
+      background-color: #f8e2cf;
+      text-align: center; }
+      body .mainGeneral__partePrincipalParrafoPoliticas ol {
+        list-style: none; }
+    body .mainGeneral__partePrincipalParrafoEnvios {
+      width: 100%;
+      background-color: #f8e2cf;
+      text-align: center; }
+      body .mainGeneral__partePrincipalParrafoEnvios ul {
+        list-style: none; }
+  body .mainGeneral {
     width: 100%; }
     body .mainGeneral__mainInicio {
       width: 100%;
       background-color: #f8e2cf;
-      text-align: center; }
+      text-align: center;
+      padding-top: 20px; }
       body .mainGeneral__mainInicio .h2 {
         justify-content: center;
         align-items: center;
         color: #bd4b4b;
         text-align: center; }
-    body .mainGeneral .fotoCarrousel {
-      justify-content: center;
-      align-items: center;
-      width: 1000px;
-      height: 700px; }
-    body .mainGeneral .contenedorCarrouselSoloInicio {
-      width: 100%;
-      display: block;
-      justify-content: center;
-      align-items: center;
-      padding-top: 25px;
-      padding-right: 25px;
-      padding-bottom: 25px;
-      margin: 0; }
+    body .mainGeneral .destacados {
+      padding: 12px; }
   body .footerGeneral {
     width: 100%;
     background-color: #f5c6aa;
@@ -151,6 +129,8 @@ body {
       width: 196px;
       height: 24px;
       color: #f5c6aa; }
+    body .footerGeneral .botonFooterContacto {
+      margin-top: 13px; }
 
 /*------ MAIN PRODUCTOS-CONJUNTO-PIJAMA-AROMA-------*/
 body .mainGeneral {
@@ -239,38 +219,10 @@ body .mainGeneral__contenedorConjunto__conjunto img {
   padding-top: 5px; }
 
 /*--------------------------------*/
-body .mainGeneral__tituloProductoConjuntoPijamaAroma {
-  text-align: center;
-  font-size: 27px; }
-
-body .mainGeneral__partePrincipalParrafoPoliticas {
-  width: 100%;
-  height: 800px;
-  background-color: #f8e2cf;
-  text-align: center; }
-  body .mainGeneral__partePrincipalParrafoPoliticas ol {
-    list-style: none; }
-
-body .mainGeneral__partePrincipalParrafoEnvios {
-  width: 100%;
-  background-color: #f8e2cf;
-  text-align: center; }
-  body .mainGeneral__partePrincipalParrafoEnvios ul {
-    list-style: none; }
-
-/*     FORMULARIOS     */
-/*------------------------------*/
 @media (min-width: 769px) and (max-width: 1024px) {
   body .encabezadoGeneral {
     width: 100%;
     padding: 0; }
-    body .encabezadoGeneral__sectionUno p {
-      font-size: 22px; }
-    body .encabezadoGeneral__sectionDos {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: flex-end;
-      margin-right: 0; }
     body .encabezadoGeneral__sectionTres {
       width: 100%;
       padding: 15px; }
@@ -288,9 +240,6 @@ body .mainGeneral__partePrincipalParrafoEnvios {
   body .mainGeneral__mainInicio__fotoInicio1 img {
     width: 400px;
     height: 400px; }
-  body .mainGeneral .fotoCarrousel {
-    width: 500px;
-    height: 400px; }
   body .mainGeneral .h2Producto {
     text-align: center;
     font-size: 27px; }
@@ -307,13 +256,15 @@ body .mainGeneral__partePrincipalParrafoEnvios {
     justify-content: space-between;
     list-style: none;
     font-size: 20px; }
-    body .footerGeneral__veniAConocernos {
-      padding-left: 15px;
-      font-size: 20px; }
-      body .footerGeneral__veniAConocernos__googleMaps {
-        width: 200px;
-        height: 170px; }
+    body .footerGeneral .footerDerechosAutor {
+      margin-bottom: 0 !important; }
+    body .footerGeneral .bloqueFormularioFooter {
+      display: block !important; }
+    body .footerGeneral .botonSubscribirseFooter {
+      margin-top: 5px; }
     body .footerGeneral .parrafoMapaDeSitio {
+      width: 52px;
+      height: 24px;
       color: #f5c6aa; } }
 
 @media only screen and (max-width: 768px) {
@@ -325,17 +276,6 @@ body .mainGeneral__partePrincipalParrafoEnvios {
       body .encabezadoGeneral__sectionUno p {
         font-size: 15px;
         margin-top: 0; }
-    body .encabezadoGeneral__sectionDos {
-      padding: 10px;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: flex-end;
-      margin-right: 0; }
-    body .encabezadoGeneral__sectionTres {
-      width: 100%;
-      padding: 1% 0; }
-      body .encabezadoGeneral__sectionTres__tituloPrincipal {
-        font-size: 18px; }
     body .encabezadoGeneral__contenedorListaMenu {
       width: 100%;
       padding: 15px; }
@@ -354,9 +294,6 @@ body .mainGeneral__partePrincipalParrafoEnvios {
     font-size: 20px; }
   body .mainGeneral__mainInicio__fotoInicio1 img {
     width: 300px;
-    height: 300px; }
-  body .mainGeneral .fotoCarrousel {
-    width: 400px;
     height: 300px; }
   body .mainGeneral .h2Producto {
     text-align: center;
@@ -380,12 +317,12 @@ body .mainGeneral__partePrincipalParrafoEnvios {
     list-style: none;
     font-size: 15px;
     padding-left: 15px; }
-    body .footerGeneral__veniAConocernos {
-      padding-left: 9px;
-      font-size: 17px; }
-      body .footerGeneral__veniAConocernos__googleMaps {
-        width: 150px;
-        height: 90px; } }
+    body .footerGeneral .footerDerechosAutor {
+      margin-bottom: 0 !important; }
+    body .footerGeneral .bloqueFormularioFooter {
+      display: block !important; }
+    body .footerGeneral .botonSubscribirseFooter {
+      margin-top: 5px; } }
 
 @media (max-width: 480px) {
   body .encabezadoGeneral {
@@ -452,19 +389,12 @@ body .mainGeneral__partePrincipalParrafoEnvios {
     font-size: 10px; }
   body .footerGeneral {
     width: 100%;
-    height: 400px;
+    height: 320px;
     display: block;
     justify-content: space-between;
     list-style: none;
     font-size: 10px;
     padding-left: 10px; }
-    body .footerGeneral__veniAConocernos {
-      padding-left: 5px;
-      font-size: 12px;
-      padding-top: 5px; }
-      body .footerGeneral__veniAConocernos__googleMaps {
-        width: 150px;
-        height: 120px; }
     body .footerGeneral .footerDerechosAutor {
       margin-bottom: 0 !important; }
     body .footerGeneral .bloqueFormularioFooter {
