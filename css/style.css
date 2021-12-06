@@ -65,7 +65,7 @@ body {
         list-style: none;
         width: 120px;
         height: 100px;
-        background: #fdf6f0;
+        background: #f5c6aa;
         border-radius: 12px; }
   body .mainGeneral {
     width: 100%;
@@ -83,9 +83,9 @@ body {
     body .mainGeneral__partePrincipalParrafoEnvios {
       width: 100%;
       background-color: #f8e2cf;
-      text-align: center; }
+      text-align: left; }
       body .mainGeneral__partePrincipalParrafoEnvios ul {
-        list-style: none; }
+        list-style: circle; }
   body .mainGeneral {
     width: 100%; }
     body .mainGeneral__mainInicio {
@@ -143,7 +143,7 @@ body .mainGeneral {
     padding-bottom: 15px; }
 
 body .mainGeneral__contenedorConjunto {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -263,8 +263,6 @@ body .mainGeneral__contenedorConjunto__conjunto img {
     body .footerGeneral .botonSubscribirseFooter {
       margin-top: 5px; }
     body .footerGeneral .parrafoMapaDeSitio {
-      width: 52px;
-      height: 24px;
       color: #f5c6aa; } }
 
 @media only screen and (max-width: 768px) {
@@ -299,13 +297,10 @@ body .mainGeneral__contenedorConjunto__conjunto img {
     text-align: center;
     font-size: 17px; }
   body .mainGeneral__contenedorConjunto {
-    width: 80%;
-    margin: 0 auto;
-    padding-top: 17px;
-    padding-bottom: 17px; }
+    width: 100%; }
     body .mainGeneral__contenedorConjunto__conjunto img {
-      width: 150px;
-      height: 150px; }
+      width: 25px;
+      height: 250px; }
     body .mainGeneral__contenedorConjunto__conjunto h2 {
       font-size: 16px; }
     body .mainGeneral__contenedorConjunto__conjunto h3 {
@@ -404,7 +399,9 @@ body .mainGeneral__contenedorConjunto__conjunto img {
     body .footerGeneral .parrafoMapaDeSitio {
       width: 52px;
       height: 72px;
-      color: #f5c6aa; } }
+      color: #f5c6aa; }
+    body .footerGeneral .botonFooterContacto {
+      display: none; } }
 
 #btn-menu {
   display: none; }

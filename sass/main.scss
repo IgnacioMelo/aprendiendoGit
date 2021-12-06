@@ -82,7 +82,7 @@ body{
                 list-style: none;
                 width: 120px;
                 height: 100px;
-                background: $color-secundario;
+                background: #f5c6aa;
                 border-radius: 12px
             }
         }
@@ -106,9 +106,9 @@ body{
         &__partePrincipalParrafoEnvios{
             width: 100%;
             background-color: $color-terciario;
-            text-align: center;
+            text-align: left;
             ul{
-                list-style: none;
+                list-style:circle;
             }
         }
     }
