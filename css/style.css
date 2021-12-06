@@ -147,6 +147,10 @@ body {
     body .footerGeneral .btn:hover {
       background-color: #5e454b;
       color: #fdf6f0; }
+    body .footerGeneral .parrafoMapaDeSitio {
+      width: 196px;
+      height: 24px;
+      color: #f5c6aa; }
 
 /*------ MAIN PRODUCTOS-CONJUNTO-PIJAMA-AROMA-------*/
 body .mainGeneral {
@@ -308,7 +312,9 @@ body .mainGeneral__partePrincipalParrafoEnvios {
       font-size: 20px; }
       body .footerGeneral__veniAConocernos__googleMaps {
         width: 200px;
-        height: 170px; } }
+        height: 170px; }
+    body .footerGeneral .parrafoMapaDeSitio {
+      color: #f5c6aa; } }
 
 @media only screen and (max-width: 768px) {
   body .encabezadoGeneral {
@@ -446,7 +452,7 @@ body .mainGeneral__partePrincipalParrafoEnvios {
     font-size: 10px; }
   body .footerGeneral {
     width: 100%;
-    height: 270px;
+    height: 400px;
     display: block;
     justify-content: space-between;
     list-style: none;
@@ -464,7 +470,11 @@ body .mainGeneral__partePrincipalParrafoEnvios {
     body .footerGeneral .bloqueFormularioFooter {
       display: block !important; }
     body .footerGeneral .botonSubscribirseFooter {
-      margin-top: 5px; } }
+      margin-top: 5px; }
+    body .footerGeneral .parrafoMapaDeSitio {
+      width: 52px;
+      height: 72px;
+      color: #f5c6aa; } }
 
 #btn-menu {
   display: none; }
