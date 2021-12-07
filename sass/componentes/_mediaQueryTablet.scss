@@ -46,17 +46,29 @@
                 font-size: 17px;
             }
             &__contenedorConjunto{
+                display: grid;
+                grid-template-areas:
+                "conjunto1 conjunto2"
+                "conjunto3 conjunto4"
+                "conjunto5 conjunto6"
+                "conjunto7 conjunto8"
+                "conjunto9 .";
+                grid-template-rows: repeat(5, 1fr) ;
+                grid-template-columns: repeat(2, 1fr);
                 width: 100%;
+                margin: 0 auto;
+                padding-top:11px ;
+                padding-bottom: 11px ;
                 &__conjunto{
                     img{
-                        width: 25px;
-                        height: 250px;
+                        width: 250px;
+                        height: 250px;        
                     }
                     h2{
-                        font-size: 16px;
+                        font-size: 20px;
                     }
                     h3{
-                        font-size: 16px;
+                        font-size: 20px;
                     }
                 }
             }
@@ -66,8 +78,7 @@
             display:flex;
             justify-content: space-between;
             list-style: none;
-            font-size: 15px;
-            padding-left: 15px;
+            font-size: 20px;
             .footerDerechosAutor{
                 margin-bottom: 0 !important;
             }
@@ -78,9 +89,12 @@
             .botonSubscribirseFooter{
                 margin-top: 5px;
             }
+            .parrafoMapaDeSitio{
+                width: 96px;
+                height: 48px;
+            }
         }
     }
 
 }
-
 

@@ -8,24 +8,63 @@ body{
             padding-top: 15px;
             padding-bottom: 15px;
         }
-    }
-    .mainGeneral__contenedorConjunto{
-        width: 100%;
-        margin: 0 auto;
-        padding-top:25px ;
-        padding-bottom: 25px ;
-        display: grid;
-        grid-template-areas: 
-        " conjunto1 conjunto2 conjunto3"
-        " conjunto4 conjunto5 conjunto6"
-        " conjunto7 conjunto8 conjunto9";
-        grid-template-rows: repeat(3, 1fr) ;
-        grid-template-columns: repeat(3, 1fr);
-        grid-row-gap: 20px;
-        grid-column-gap: 20px;
-        align-items: center;
-        justify-items: center;
-        
+        &__contenedorConjunto{
+            width: 100%;
+            margin: 0 auto;
+            padding-top:25px ;
+            padding-bottom: 25px ;
+            display: grid;
+            grid-template-areas: 
+            " conjunto1 conjunto2 conjunto3"
+            " conjunto4 conjunto5 conjunto6"
+            " conjunto7 conjunto8 conjunto9";
+            grid-template-rows: repeat(3, 1fr) ;
+            grid-template-columns: repeat(3, 1fr);
+            grid-row-gap: 20px;
+            grid-column-gap: 20px;
+            align-items: center;
+            justify-items: center;
+            &__button{
+                padding: 10px 20px;
+                margin-bottom: 15px;
+                border-radius: 12px;
+                background-color: $color-secundario;
+                border: $color-terciario;
+                .linkWpCompra{
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+            &__button:hover{
+                background-color:$color-p ;
+                a{
+                    color:$color-secundario;
+                }
+            }
+            &__conjunto{
+                width: 100%;
+                display: flex;
+                flex-flow: row wrap;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                border: 1px solid wheat;
+                border-radius: 12px;
+                h2{
+                    font-size: 21px;
+                    color: $color-p;
+                    
+                    
+                }
+                img{
+                    width: 250px ;
+                    height: 250px;
+                    border-radius: 12px;
+                    padding-top: 5px;
+                }
+            }
+        }
     }
     
     .Uno{
@@ -55,51 +94,6 @@ body{
     .Nueve{
         grid-area: conjunto9;
     }
-    
-    
-    .mainGeneral__contenedorConjunto__button{
-        padding: 10px 20px;
-        margin-bottom: 15px;
-        border-radius: 12px;
-        background-color: $color-secundario;
-        border: $color-terciario;
-        .linkWpCompra{
-            text-decoration: none;
-            color: black;
-        }
-    }
-    .mainGeneral__contenedorConjunto__button:hover{
-        background-color:$color-p ;
-        a{
-            color:$color-secundario;
-        }
-    }
-    
-    .mainGeneral__contenedorConjunto__conjunto{
-        width: 100%;
-        display: flex;
-        flex-flow: row wrap;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        border: 1px solid wheat;
-        border-radius: 12px;
-        h2{
-            font-size: 21px;
-            color: $color-p;
-            
-            
-        }
-
-    }
-    .mainGeneral__contenedorConjunto__conjunto img{
-        width: 250px ;
-        height: 250px;
-        border-radius: 12px;
-        padding-top: 5px;
-    }
-    
 }
 
 

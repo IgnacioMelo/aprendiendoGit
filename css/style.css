@@ -131,6 +131,10 @@ body {
       color: #f5c6aa; }
     body .footerGeneral .botonFooterContacto {
       margin-top: 13px; }
+    body .footerGeneral .linkMapaDeSitio:hover {
+      text-decoration: underline; }
+    body .footerGeneral .linkMapaDeSitio__1:hover {
+      text-decoration: underline; }
 
 /*------ MAIN PRODUCTOS-CONJUNTO-PIJAMA-AROMA-------*/
 body .mainGeneral {
@@ -141,20 +145,50 @@ body .mainGeneral {
     margin-bottom: 0;
     padding-top: 15px;
     padding-bottom: 15px; }
-
-body .mainGeneral__contenedorConjunto {
-  width: 100%;
-  margin: 0 auto;
-  padding-top: 25px;
-  padding-bottom: 25px;
-  display: grid;
-  grid-template-areas: " conjunto1 conjunto2 conjunto3" " conjunto4 conjunto5 conjunto6" " conjunto7 conjunto8 conjunto9";
-  grid-template-rows: repeat(3, 1fr);
-  grid-template-columns: repeat(3, 1fr);
-  grid-row-gap: 20px;
-  grid-column-gap: 20px;
-  align-items: center;
-  justify-items: center; }
+  body .mainGeneral__contenedorConjunto {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: grid;
+    grid-template-areas: " conjunto1 conjunto2 conjunto3" " conjunto4 conjunto5 conjunto6" " conjunto7 conjunto8 conjunto9";
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    align-items: center;
+    justify-items: center; }
+    body .mainGeneral__contenedorConjunto__button {
+      padding: 10px 20px;
+      margin-bottom: 15px;
+      border-radius: 12px;
+      background-color: #fdf6f0;
+      border: #f8e2cf; }
+      body .mainGeneral__contenedorConjunto__button .linkWpCompra {
+        text-decoration: none;
+        color: black; }
+    body .mainGeneral__contenedorConjunto__button:hover {
+      background-color: #5e454b; }
+      body .mainGeneral__contenedorConjunto__button:hover a {
+        color: #fdf6f0; }
+    body .mainGeneral__contenedorConjunto__conjunto {
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border: 1px solid wheat;
+      border-radius: 12px; }
+      body .mainGeneral__contenedorConjunto__conjunto h2 {
+        font-size: 21px;
+        color: #5e454b; }
+      body .mainGeneral__contenedorConjunto__conjunto img {
+        width: 250px;
+        height: 250px;
+        border-radius: 12px;
+        padding-top: 5px; }
 
 body .Uno {
   grid-area: conjunto1; }
@@ -182,41 +216,6 @@ body .Ocho {
 
 body .Nueve {
   grid-area: conjunto9; }
-
-body .mainGeneral__contenedorConjunto__button {
-  padding: 10px 20px;
-  margin-bottom: 15px;
-  border-radius: 12px;
-  background-color: #fdf6f0;
-  border: #f8e2cf; }
-  body .mainGeneral__contenedorConjunto__button .linkWpCompra {
-    text-decoration: none;
-    color: black; }
-
-body .mainGeneral__contenedorConjunto__button:hover {
-  background-color: #5e454b; }
-  body .mainGeneral__contenedorConjunto__button:hover a {
-    color: #fdf6f0; }
-
-body .mainGeneral__contenedorConjunto__conjunto {
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  border: 1px solid wheat;
-  border-radius: 12px; }
-  body .mainGeneral__contenedorConjunto__conjunto h2 {
-    font-size: 21px;
-    color: #5e454b; }
-
-body .mainGeneral__contenedorConjunto__conjunto img {
-  width: 250px;
-  height: 250px;
-  border-radius: 12px;
-  padding-top: 5px; }
 
 /*--------------------------------*/
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -297,99 +296,100 @@ body .mainGeneral__contenedorConjunto__conjunto img {
     text-align: center;
     font-size: 17px; }
   body .mainGeneral__contenedorConjunto {
-    width: 100%; }
+    display: grid;
+    grid-template-areas: "conjunto1 conjunto2" "conjunto3 conjunto4" "conjunto5 conjunto6" "conjunto7 conjunto8" "conjunto9 .";
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 11px;
+    padding-bottom: 11px; }
     body .mainGeneral__contenedorConjunto__conjunto img {
-      width: 25px;
+      width: 250px;
       height: 250px; }
     body .mainGeneral__contenedorConjunto__conjunto h2 {
-      font-size: 16px; }
+      font-size: 20px; }
     body .mainGeneral__contenedorConjunto__conjunto h3 {
-      font-size: 16px; }
+      font-size: 20px; }
   body .footerGeneral {
     width: 100%;
     display: flex;
     justify-content: space-between;
     list-style: none;
-    font-size: 15px;
-    padding-left: 15px; }
+    font-size: 20px; }
     body .footerGeneral .footerDerechosAutor {
       margin-bottom: 0 !important; }
     body .footerGeneral .bloqueFormularioFooter {
       display: block !important; }
     body .footerGeneral .botonSubscribirseFooter {
-      margin-top: 5px; } }
+      margin-top: 5px; }
+    body .footerGeneral .parrafoMapaDeSitio {
+      width: 96px;
+      height: 48px; } }
 
 @media (max-width: 480px) {
   body .encabezadoGeneral {
     width: 100%; }
-    body .encabezadoGeneral__sectionUno {
-      font-size: 10px;
-      width: 100%;
-      padding: 0;
-      margin-bottom: 0; }
-      body .encabezadoGeneral__sectionUno p {
-        font-size: 13px; }
-    body .encabezadoGeneral__sectionDos {
-      padding: 7px;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: flex-start;
-      margin-right: 0;
-      font-size: 11px; }
-      body .encabezadoGeneral__sectionDos .buttonHeader a {
-        font-size: 16px; }
     body .encabezadoGeneral__sectionTres {
       width: 100%;
       padding: 1% 0; }
       body .encabezadoGeneral__sectionTres__tituloPrincipal {
-        font-size: 15px; }
+        font-size: 22px; }
     body .encabezadoGeneral__contenedorListaMenu {
       padding: 7px; }
       body .encabezadoGeneral__contenedorListaMenu__listaMenu {
         font-size: 15px; }
-  body .mainGeneral__mainInicio h2 {
-    text-align: center;
-    font-size: 15px; }
-  body .mainGeneral__mainInicio__fotoInicio1 img {
-    width: 120px;
-    height: 120px; }
-  body .mainGeneral .fotoCarrousel {
-    padding-left: 16px;
-    width: 380px;
-    height: 300px; }
-  body .mainGeneral .contenedorCarrouselSoloInicio {
-    display: block; }
-  body .mainGeneral__contenedorConjunto {
-    display: grid;
-    grid-template-areas: "conjunto1 conjunto2" "conjunto3 conjunto4" "conjunto5 conjunto6" "conjunto7 conjunto8" "conjunto9 .";
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    width: 80%;
-    margin: 0 auto;
-    padding-top: 11px;
-    padding-bottom: 11px; }
-    body .mainGeneral__contenedorConjunto__conjunto img {
-      width: 150px;
-      height: 100px; }
-    body .mainGeneral__contenedorConjunto__conjunto h2 {
-      font-size: 12px; }
-    body .mainGeneral__contenedorConjunto__conjunto h3 {
-      font-size: 12px; }
-    body .mainGeneral__contenedorConjunto__button {
-      padding: 5px 10px;
-      margin-bottom: 0;
+  body .mainGeneral {
+    width: 100%; }
+    body .mainGeneral__mainInicio h2 {
+      text-align: center;
+      font-size: 19px; }
+    body .mainGeneral__mainInicio__fotoInicio1 img {
+      width: 120px;
+      height: 120px; }
+    body .mainGeneral__contenedorConjunto {
+      display: grid;
+      grid-template-areas: "conjunto1 conjunto2" "conjunto3 conjunto4" "conjunto5 conjunto6" "conjunto7 conjunto8" "conjunto9 .";
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      width: 100%;
+      margin: 0 auto;
+      padding-top: 11px;
+      padding-bottom: 11px; }
+      body .mainGeneral__contenedorConjunto__conjunto img {
+        width: 150px;
+        height: 100px; }
+      body .mainGeneral__contenedorConjunto__conjunto h2 {
+        font-size: 12px; }
+      body .mainGeneral__contenedorConjunto__conjunto h3 {
+        font-size: 12px; }
+      body .mainGeneral__contenedorConjunto__button {
+        padding: 5px 10px;
+        margin-bottom: 0;
+        font-size: 10px; }
+    body .mainGeneral .h2Producto {
+      text-align: center;
       font-size: 10px; }
-  body .mainGeneral .h2Producto {
-    text-align: center;
-    font-size: 10px; }
+    body .mainGeneral .imagenLinkInicio {
+      margin-top: 75px;
+      height: 133.33px; }
+    body .mainGeneral .imagenLinkInicio1 {
+      margin-top: 35px;
+      height: 133.33px; }
+    body .mainGeneral .destacados {
+      height: 700px; }
   body .footerGeneral {
     width: 100%;
-    height: 320px;
+    height: 375px;
     display: block;
     justify-content: space-between;
     list-style: none;
     font-size: 10px;
     padding-left: 10px; }
+    body .footerGeneral h5 {
+      font-size: 18px; }
+    body .footerGeneral p {
+      font-size: 15px; }
     body .footerGeneral .footerDerechosAutor {
       margin-bottom: 0 !important; }
     body .footerGeneral .bloqueFormularioFooter {
@@ -398,10 +398,14 @@ body .mainGeneral__contenedorConjunto__conjunto img {
       margin-top: 5px; }
     body .footerGeneral .parrafoMapaDeSitio {
       width: 52px;
-      height: 72px;
+      height: 68px;
       color: #f5c6aa; }
     body .footerGeneral .botonFooterContacto {
-      display: none; } }
+      display: none; }
+    body .footerGeneral .linkMapaDeSitio {
+      font-size: 15px; }
+      body .footerGeneral .linkMapaDeSitio__1 {
+        display: none; } }
 
 #btn-menu {
   display: none; }

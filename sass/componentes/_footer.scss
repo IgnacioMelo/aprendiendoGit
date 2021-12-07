@@ -37,5 +37,13 @@
     .botonFooterContacto{
         margin-top: 13px;
     }
+    .linkMapaDeSitio:hover{
+        text-decoration: underline;
+    }
+    .linkMapaDeSitio{
+        &__1:hover{
+            text-decoration: underline;
+        }
+    }
 
 }
